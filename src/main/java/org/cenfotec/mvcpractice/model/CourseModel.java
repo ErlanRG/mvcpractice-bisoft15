@@ -1,4 +1,4 @@
-package model;
+package org.cenfotec.mvcpractice.model;
 
 public class CourseModel {
 

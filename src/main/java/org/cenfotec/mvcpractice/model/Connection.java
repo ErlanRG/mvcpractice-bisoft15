@@ -1,4 +1,4 @@
-package model;
+package org.cenfotec.mvcpractice.model;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;

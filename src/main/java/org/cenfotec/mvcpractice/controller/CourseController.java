@@ -1,9 +1,9 @@
-package controller;
+package org.cenfotec.mvcpractice.controller;
 
-import model.Connection;
-import model.CourseDAO;
-import model.CourseModel;
-import view.ConsoleView;
+import org.cenfotec.mvcpractice.model.Connection;
+import org.cenfotec.mvcpractice.model.CourseDAO;
+import org.cenfotec.mvcpractice.model.CourseModel;
+import org.cenfotec.mvcpractice.view.ConsoleView;
 
 import java.sql.SQLException;
 
@@ -29,32 +29,4 @@ public class CourseController {
             viewConsole.errorMessage("Error al insertar datos: " + e.getMessage());
         }
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
