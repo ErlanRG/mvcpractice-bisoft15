@@ -1,4 +1,4 @@
-package view;
+package org.cenfotec.mvcpractice.view;
 
 public class ConsoleView {
     public void showMessage(String message) {

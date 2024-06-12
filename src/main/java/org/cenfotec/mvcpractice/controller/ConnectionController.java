@@ -1,7 +1,7 @@
-package controller;
+package org.cenfotec.mvcpractice.controller;
 
-import model.Connection;
-import view.ConsoleView;
+import org.cenfotec.mvcpractice.model.Connection;
+import org.cenfotec.mvcpractice.view.ConsoleView;
 
 import java.sql.SQLException;
 
