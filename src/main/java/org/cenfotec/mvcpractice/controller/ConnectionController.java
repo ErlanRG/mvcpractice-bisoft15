@@ -1,6 +1,6 @@
 package org.cenfotec.mvcpractice.controller;
 
-import org.cenfotec.mvcpractice.model.Connection;
+import org.cenfotec.mvcpractice.model.ConnectionModel;
 import org.cenfotec.mvcpractice.view.ConsoleView;
 
 import java.sql.SQLException;
@@ -15,7 +15,7 @@ public class ConnectionController {
     }
 
     public void openConnection() {
-        java.sql.Connection connection = Connection.getConnection();
+        java.sql.Connection connection = ConnectionModel.getConnection();
         if (connection != null) {
             try {
                 connection.close();
