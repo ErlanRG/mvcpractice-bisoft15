@@ -1,7 +1,7 @@
 package org.cenfotec.mvcpractice.model;
 
 public class PersonModel {
-    private Long id;
+    private int id;
     private String name;
     private String lastName;
     private String email;
@@ -17,11 +17,11 @@ public class PersonModel {
         this.phone = phone;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -59,7 +59,7 @@ public class PersonModel {
 
     @Override
     public String toString() {
-        return "PersonModel{" +
+        return "Persona{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
