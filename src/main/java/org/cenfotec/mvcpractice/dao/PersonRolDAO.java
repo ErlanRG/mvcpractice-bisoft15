@@ -2,6 +2,7 @@ package org.cenfotec.mvcpractice.dao;
 
 import org.cenfotec.mvcpractice.model.PersonModel;
 import org.cenfotec.mvcpractice.model.PersonRolModel;
+import org.cenfotec.mvcpractice.model.RolModel;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -29,6 +30,16 @@ public class PersonRolDAO {
         String query = "DELETE FROM `RAN_NAR_PersonaRol` WHERE idPersona = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setInt(1, person.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
+        }
+    }
+
+    public void deleteRol(RolModel rol) throws SQLException {
+        String sql = "DELETE FROM `RAN_NAR_PersonaRol` WHERE idRol = ?";
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setInt(1, rol.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
             throw e;
