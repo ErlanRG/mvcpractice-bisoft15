@@ -12,6 +12,5 @@ public class Main {
         PersonController personController = new PersonController(consoleView);
         RolController rolController = new RolController(consoleView);
         PersonRolController personRolController = new PersonRolController(consoleView);
-
     }
 }
