@@ -9,9 +9,9 @@ public class LibraryModel {
 
     }
     //Constructor//
-    public LibraryModel(String name, String adress) {
+    public LibraryModel(String name, String address) {
         this.name = name;
-        this.address = adress;
+        this.address = address;
     }
 
     //get and set//
