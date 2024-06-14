@@ -3,7 +3,7 @@ package org.cenfotec.mvcpractice.model;
 public class LibraryModel {
     private int id;
     private String name;
-    private String adress;
+    private String address;
 
     public LibraryModel(){
 
@@ -11,7 +11,7 @@ public class LibraryModel {
     //Constructor//
     public LibraryModel(String name, String adress) {
         this.name = name;
-        this.adress = adress;
+        this.address = adress;
     }
 
     //get and set//
@@ -33,11 +33,11 @@ public class LibraryModel {
     }
 
     public String getAdress() {
-        return adress;
+        return address;
     }
 
     public void setAdress(String adress) {
-        this.adress = adress;
+        this.address = adress;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class LibraryModel {
         return "LibraryModel{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", adress='" + adress + '\'' +
+                ", address='" + address + '\'' +
                 '}';
     }
 }
