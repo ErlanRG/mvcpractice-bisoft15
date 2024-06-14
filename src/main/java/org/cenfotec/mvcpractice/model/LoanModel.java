@@ -47,7 +47,7 @@ public class LoanModel {
     }
 
     public java.sql.Date getDateLoan() {
-        return dateLoan;
+        return (java.sql.Date) dateLoan;
     }
 
     public void setDateLoan(Date dateLoan) {

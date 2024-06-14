@@ -84,7 +84,7 @@ public class BookDAO {
     }
 
     //ELiminar libro//
-    public void deleteLibro(BookModel book) throws SQLException {
+    public void deleteBook(BookModel book) throws SQLException {
         String query = "DELETE FROM `RAN_NAR_BOOK` WHERE id = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setInt(1, book.getId());
