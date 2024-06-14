@@ -46,7 +46,7 @@ public class LoanModel {
         this.idPerson = idPerson;
     }
 
-    public Date getDateLoan() {
+    public java.sql.Date getDateLoan() {
         return dateLoan;
     }
 
