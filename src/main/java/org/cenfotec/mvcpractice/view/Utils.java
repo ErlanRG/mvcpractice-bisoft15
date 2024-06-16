@@ -23,7 +23,9 @@ public class Utils {
     public int readInt() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Seleccione una opcion: ");
-        return scanner.nextInt();
+        int number = scanner.nextInt();
+        scanner.nextLine();
+        return number;
     }
 
     public String readString(String text) throws IllegalAccessException {
