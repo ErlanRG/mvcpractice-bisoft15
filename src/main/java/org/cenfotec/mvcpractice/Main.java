@@ -1,16 +1,19 @@
 package org.cenfotec.mvcpractice;
 
-import org.cenfotec.mvcpractice.controller.PersonController;
-import org.cenfotec.mvcpractice.controller.PersonRolController;
-import org.cenfotec.mvcpractice.controller.RolController;
-import org.cenfotec.mvcpractice.view.ConsoleView;
+import org.cenfotec.mvcpractice.view.Menu;
+import org.cenfotec.mvcpractice.view.Utils;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello MySQL!");
-        ConsoleView consoleView = new ConsoleView();
-        PersonController personController = new PersonController(consoleView);
-        RolController rolController = new RolController(consoleView);
-        PersonRolController personRolController = new PersonRolController(consoleView);
+        Menu menu = new Menu();
+        Utils utils = new Utils();
+
+        int opc;
+
+        do {
+            menu.mainMenu();
+            opc = utils.readInt();
+            menu.processMainMenuOpt(opc);
+        } while (opc != 0);
     }
 }
