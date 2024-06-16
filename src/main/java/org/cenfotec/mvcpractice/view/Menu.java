@@ -41,6 +41,10 @@ public class Menu {
                 utils.pressEnterToContinue();
                 break;
             }
+
+            default: {
+                System.out.println("Opcion invalida");
+            }
         }
     }
 
@@ -113,6 +117,10 @@ public class Menu {
                     System.out.println("Persona no encontrada");
                 }
                 utils.pressEnterToContinue();
+            }
+
+            default: {
+                System.out.println("Opcion invalida");
             }
         }
     }
