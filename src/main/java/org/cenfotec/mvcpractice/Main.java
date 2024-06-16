@@ -4,7 +4,7 @@ import org.cenfotec.mvcpractice.view.Menu;
 import org.cenfotec.mvcpractice.view.Utils;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException {
         Menu menu = new Menu();
         Utils utils = new Utils();
 
