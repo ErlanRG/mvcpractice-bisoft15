@@ -16,7 +16,7 @@ public class Menu {
         System.out.println("0. Salir");
     }
 
-    public void processMainMenuOpt(int opc) {
+    public void processMainMenuOpt(int opc) throws IllegalAccessException {
         int subMenuOpc;
         switch (opc) {
             case 0: {
@@ -52,7 +52,7 @@ public class Menu {
         System.out.println("0. Salir");
     }
 
-    private void processPersonMenuOpt(int opc) {
+    private void processPersonMenuOpt(int opc) throws IllegalAccessException {
         switch (opc) {
             case 0: {
                 break;
@@ -104,9 +104,13 @@ public class Menu {
                 System.out.println("Eliminar persona");
                 String email = utils.readString("Ingrese email de persona a modificar: ");
                 PersonModel p1 = personController.getPersonByEmail(email);
-                boolean decision = utils.readBoolean("Seguro que desea eliminar a la siguiente persona? (S/N) " + p1.toString());
-                if (decision) {
-                    personController.deletePerson(p1);
+                if (p1 != null) {
+                    boolean decision = utils.readBoolean("Seguro que desea eliminar a la siguiente persona? (S/N) " + p1.toString());
+                    if (decision) {
+                        personController.deletePerson(p1);
+                    }
+                } else {
+                    System.out.println("Persona no encontrada");
                 }
                 utils.pressEnterToContinue();
             }
