@@ -1,3 +1,8 @@
+# Grupo
+
+* Paz Naranjo
+* Erlan Rangel
+
 ## Semana 4
 
 Se requiere crear una base de datos relacional en MySQL para administrar un sistema personalizado. La base de datos debe
